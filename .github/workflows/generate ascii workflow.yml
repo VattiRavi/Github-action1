@@ -10,4 +10,6 @@ jobs:
     - name: list files
       run: ls -lrta  
     - name: Executing shell script
-      run: ./ascii-script.sh
+      run: |
+           chmod +x
+           ./ascii-script.sh
