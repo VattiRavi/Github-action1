@@ -5,12 +5,9 @@ jobs:
   ascii-job:
     runs-on: ubuntu-latest
     steps:
-     - name: checkout
-       uses: actions/checkout@v4
-     - name: ASCII Dragon cript 
-       run: |
-          sudo apt-get install cowsay -y
-          cowsay -f dragon "Run for cover, I am a dragon...RAWR" >> dragon.txt
-          grep -i "dragon" dragon.txt
-          cat dragon.txt
-          ls -ltra
+    - name: checkout
+      uses: actions/checkout@v4
+    - name: list files
+      run: ls -lrta  
+    - name: Executing shell script
+      run: ./ascii-script.sh
