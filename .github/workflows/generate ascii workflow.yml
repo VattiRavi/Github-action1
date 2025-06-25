@@ -12,4 +12,4 @@ jobs:
     - name: Executing shell script
       run: |
            chmod +x asciii-script.sh
-           ./asciii-script.sh
+           ./VattiRavi/Github-action1/.github/workflows/asciii-script.sh
